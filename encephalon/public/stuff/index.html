@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>stuff</title>
+
+<!-- no idea how this code works.  totally ripped it off. -->
+
+<script language="JavaScript">
+
+<!--
+//PullDown Menu, onChange Version
+//Version 1.0
+//Last Updated: January 13, 1998
+//Code maintained at: http://www.moock.org/webdesign/javascript/
+//Copy permission granted for non-commercial uses. Written by Colin Moock.
+
+        var url
+
+        function changepage(formObject)
+        {
+                url = formObject.options[formObject.options.selectedIndex].value;
+
+                if(url != "empty")
+                        {
+                        opener.document.location = url;
+                        url = "";
+                        }
+						
+						self.close();
+        }
+//-->
+
+</script>
+</head>
+
+<body bgcolor="#ffffff" topmargin="0" marginheight="0">
+
+<img src="../media/stuff1.gif">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="center">
+<br>
+<form name="navform">
+<select name="navselect" onChange="changepage(this)" style="background-color:#ffffff; font-size: 12; color: #000000; font-family: verdana, arial">
+<option selected>stuff</option>
+<option value="todo.html">to do</option>
+<option value="tocheck.html">to check</option>
+<option value="toget.html">to get</option>
+<option value="newyears.html">new years</option>
+<option value="ideas.html">ideas</option>
+<option value="travel.html">travel</option>
+<option value="links.html">links</option>
+</select>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

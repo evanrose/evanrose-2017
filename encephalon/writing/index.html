@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>writing</title>
+
+<!-- no idea how this code works.  totally ripped it off. -->
+
+<script language="JavaScript">
+
+//PullDown Menu, onChange Version
+//Version 1.0
+//Last Updated: January 13, 1998
+//Code maintained at: http://www.moock.org/webdesign/javascript/
+//Copy permission granted for non-commercial uses. Written by Colin Moock.
+
+        var url
+
+        function changepage(formObject)
+        {
+                url = formObject.options[formObject.options.selectedIndex].value;
+
+                if(url != "empty")
+                        {
+                        opener.document.location = url;
+                        url = "";
+                        }
+						
+						self.close();
+        }
+
+function bringToFront(){
+window.focus();
+} 
+</script> 		
+</head>
+
+<body bgcolor="#ffffff" topmargin="0" marginheight="0" onLoad="bringToFront()">
+
+<img src="../media/writing1.gif">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="center">
+<br>
+<form name="navform">
+<select name="navselect" onChange="changepage(this)" style="background-color:#ffffff; font-size: 12; color: #000000; font-family: verdana, arial">
+<option selected>writing</option>
+<option value="writing.html">writing 01</option>
+<option value="laundry.html">writing 02</option>
+<option value="beginning.html">writing 03</option>
+<option value="transam.html">writing 04</option>
+<option value="fiction.html">writing 05</option>
+<option value="ending.html">writing 06</option>
+<option value="nonfiction.html">writing 07</option>
+<option value="article01.html">article 01</option>
+<option value="article02.html">article 02</option>
+<option value="article03.html">article 03</option>
+<option value="weekend.html">poem 01</option>
+<option value="flight.html">poem 02</option>
+<option value="question.html">poem 03</option>
+<option value="thevery.html">poem 04</option>
+<option value="soim.html">poem 05</option>
+<option value="aletter.html">poem 06</option>
+<option value="hermind.html">poem 07</option>
+<option value="what.html">poem 08</option>
+<option value="thatgirl.html">poem 09</option>
+<option value="thisis.html">poem 10</option>
+<option value="godthis.html">poem 11</option>
+<option value="waiting.html">poem 12</option>
+<option value="youasked.html">poem 13</option>
+<option value="alone.html">poem 14</option>
+<option value="letters.html">poem 15</option>
+<option value="whereis.html">poem 16</option>
+<option value="ohiam.html">poem 17</option>
+<option value="wheni.html">poem 18</option>
+<option value="you.html">poem 19</option>
+<option value="sittingon.html">poem 20</option>
+<option value="anangry.html">poem 21</option>
+<option value="sitting.html">poem 22</option>
+<option value="iwatch.html">poem 23</option>
+<option value="thediner.html">poem 24</option>
+</select>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

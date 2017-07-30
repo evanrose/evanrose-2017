@@ -1,0 +1,154 @@
+html {
+	font-family: "gil sans",helvetica,calibri,arial,sans-serif;
+	color:#333;
+	background: #fff;
+	line-height: 150%;
+	font-size: 13px;
+}
+
+body {
+	text-align:center;
+}
+
+#container div {
+	width:500px;
+	margin:0px auto;
+	text-align:left;
+	border-bottom: 1px solid #999;
+	text-align:left;
+}
+#container div#blogs,#container div.datetime {
+	border-bottom:none;
+	margin-bottom: 25px;
+}
+.footer {
+	text-align:center;
+}
+
+h1 {
+	font-size: 20px;
+}
+h1 a {
+	text-decoration:none;
+}
+h2 {
+	font-size: 18px;
+}
+	
+h3 {
+	font-size: 16px;
+}
+
+h4 {
+	font-size: 14px;
+}
+h4 a {
+	text-decoration:none;
+}
+div.tweet p {
+	text-indent: 15px;
+}
+p {
+	/*text-align:justify;*/
+}
+.alternate {
+	display:none;
+	}
+
+li {
+	/*text-align:justify;*/
+	}
+
+cite {
+	/*text-align:justify;*/
+}
+
+a {
+	color: #348;
+	background-color:transparent;
+}
+
+a:visited {
+	color: #666;
+}
+
+a:hover {
+	color: #000;
+}
+
+img {
+	border: 0px;
+	float: right;
+	padding: 5px 0px 0px 10px;
+}
+
+div.tumblr img {
+	float:none;
+	padding:0;
+	margin-bottom: 10px;
+}
+
+.right {
+	text-align: right;
+	font-size: 10px;
+	line-height: 200%;
+	margin-bottom: -5px;
+	color:#999;
+}
+
+.right a {
+	text-decoration: none;
+	color:#666;
+}
+
+.right a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+#container #photographs {
+	width:500px;
+	overflow:hidden;
+}
+
+#container #flickr_badge_container {
+	width:600px;
+}
+
+#container div.flickr_badge_image {
+	display:inline;
+	border:0;
+	padding:0px 0px 0px 0px;
+	width:75px;
+	float:left;
+}
+
+.flickr_badge_image img {
+	padding:0px 0px 15px 0px;
+}
+
+#powered_by {
+	display:none;
+}
+.fdpoweredby {
+	display:none;
+}
+
+form ul {
+	padding: 0;
+}
+
+form li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+form label {
+	display: block;
+	width: 100%;
+}
+form textarea {
+	width: 100%;
+	height: 200px;
+}

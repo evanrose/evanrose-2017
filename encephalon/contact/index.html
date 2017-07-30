@@ -1,0 +1,29 @@
+<!--#include virtual="../include/top.html" -->		
+<script language="javascript1.1">
+<!--
+function HeyD(f)
+{
+if (f.firstname.value=="d" | f.firstname.value=="D") {
+alert("you're missed.  i hope all is well.");
+//alert("hey, doing some testing over here.  sorry.");
+    }    
+}//-->
+</script>
+<a href="../back.html">back</a>
+<br>
+<form action="http://oak.he.net/cgi-bin/suid/~evanrose/encephalon.cgi" method="post" onSubmit="javascipt:HeyD(this);">
+your name:	<br>	
+<input name="firstname" type="text" value="">		
+<br><br>	
+your email address:	<br>	
+<input name="email" type="text">			
+<br><br>
+your url:	<br>		
+<input name="website" type="text" value="http://">			
+<br><br>	
+your message:<br>		
+<textarea name="feedback" rows="6" cols="20" wrap="virtual"></textarea>			
+<br><br>
+<input type="image" src="../media/submit.gif" border="0" value="send">
+
+<!--#include virtual="../include/contactbottom.html" -->		

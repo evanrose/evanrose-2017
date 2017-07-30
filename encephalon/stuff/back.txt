@@ -1,0 +1,14 @@
+<p>&lt;!-- don't touch this code --&gt;</p>
+<p>&lt;SCRIPT LANGUAGE="JavaScript"&gt;
+
+<p>&lt;!--//</p>
+<p>
+&nbsp;&nbsp;function back() {
+&nbsp;&nbsp;history.go (-1);
+&nbsp;&nbsp;}
+&nbsp;&nbsp;//--&gt;</p>
+                
+
+<p>&lt;/SCRIPT&gt;</p>
+                
+<p>&lt;a href="#top" onClick="back()"&gt;Back to the previous page&lt;/a&gt;</p>
