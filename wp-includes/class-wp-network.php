@@ -17,25 +17,27 @@
  * ability to interact with any network of sites is required.
  *
  * @since 4.4.0
+ *
+ * @property int $id
+ * @property int $site_id
  */
 class WP_Network {
 
 	/**
 	 * Network ID.
 	 *
-	 * A numeric string, for compatibility reasons.
-	 *
 	 * @since 4.4.0
-	 * @access public
-	 * @var string
+	 * @since 4.6.0 Converted from public to private to explicitly enable more intuitive
+	 *              access via magic methods. As part of the access change, the type was
+	 *              also changed from `string` to `int`.
+	 * @var int
 	 */
-	public $id;
+	private $id;
 
 	/**
 	 * Domain of the network.
 	 *
 	 * @since 4.4.0
-	 * @access public
 	 * @var string
 	 */
 	public $domain = '';
@@ -44,7 +46,6 @@ class WP_Network {
 	 * Path of the network.
 	 *
 	 * @since 4.4.0
-	 * @access public
 	 * @var string
 	 */
 	public $path = '';
@@ -58,16 +59,14 @@ class WP_Network {
 	 * A numeric string, for compatibility reasons.
 	 *
 	 * @since 4.4.0
-	 * @access public
 	 * @var string
 	 */
-	public $blog_id = 0;
+	private $blog_id = '0';
 
 	/**
 	 * Domain used to set cookies for this network.
 	 *
 	 * @since 4.4.0
-	 * @access public
 	 * @var string
 	 */
 	public $cookie_domain = '';
@@ -78,7 +77,6 @@ class WP_Network {
 	 * Named "site" vs. "network" for legacy reasons.
 	 *
 	 * @since 4.4.0
-	 * @access public
 	 * @var string
 	 */
 	public $site_name = '';
@@ -87,7 +85,6 @@ class WP_Network {
 	 * Retrieve a network from the database by its ID.
 	 *
 	 * @since 4.4.0
-	 * @access public
 	 *
 	 * @global wpdb $wpdb WordPress database abstraction object.
 	 *
@@ -124,7 +121,6 @@ class WP_Network {
 	 * default properties based on that information.
 	 *
 	 * @since 4.4.0
-	 * @access public
 	 *
 	 * @param WP_Network|object $network A network object.
 	 */
@@ -138,10 +134,77 @@ class WP_Network {
 	}
 
 	/**
+	 * Getter.
+	 *
+	 * Allows current multisite naming conventions when getting properties.
+	 *
+	 * @since 4.6.0
+	 *
+	 * @param string $key Property to get.
+	 * @return mixed Value of the property. Null if not available.
+	 */
+	public function __get( $key ) {
+		switch ( $key ) {
+			case 'id':
+				return (int) $this->id;
+			case 'blog_id':
+				return $this->blog_id;
+			case 'site_id':
+				return (int) $this->blog_id;
+		}
+
+		return null;
+	}
+
+	/**
+	 * Isset-er.
+	 *
+	 * Allows current multisite naming conventions when checking for properties.
+	 *
+	 * @since 4.6.0
+	 *
+	 * @param string $key Property to check if set.
+	 * @return bool Whether the property is set.
+	 */
+	public function __isset( $key ) {
+		switch ( $key ) {
+			case 'id':
+			case 'blog_id':
+			case 'site_id':
+				return true;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Setter.
+	 *
+	 * Allows current multisite naming conventions while setting properties.
+	 *
+	 * @since 4.6.0
+	 *
+	 * @param string $key   Property to set.
+	 * @param mixed  $value Value to assign to the property.
+	 */
+	public function __set( $key, $value ) {
+		switch ( $key ) {
+			case 'id':
+				$this->id = (int) $value;
+				break;
+			case 'blog_id':
+			case 'site_id':
+				$this->blog_id = (string) $value;
+				break;
+			default:
+				$this->$key = $value;
+		}
+	}
+
+	/**
 	 * Set the site name assigned to the network if one has not been populated.
 	 *
 	 * @since 4.4.0
-	 * @access private
 	 */
 	private function _set_site_name() {
 		if ( ! empty( $this->site_name ) ) {
@@ -159,7 +222,6 @@ class WP_Network {
 	 * @todo What if the domain of the network doesn't match the current site?
 	 *
 	 * @since 4.4.0
-	 * @access private
 	 */
 	private function _set_cookie_domain() {
 		if ( ! empty( $this->cookie_domain ) ) {
@@ -183,7 +245,6 @@ class WP_Network {
 	 * requested site address.
 	 *
 	 * @since 4.4.0
-	 * @access public
 	 * @static
 	 *
 	 * @param string   $domain   Domain to check.
@@ -192,8 +253,6 @@ class WP_Network {
 	 * @return WP_Network|bool Network object if successful. False when no network is found.
 	 */
 	public static function get_by_path( $domain = '', $path = '', $segments = null ) {
-		global $wpdb;
-
 		$domains = array( $domain );
 		$pieces  = explode( '.', $domain );
 
@@ -220,7 +279,11 @@ class WP_Network {
 		if ( wp_using_ext_object_cache() ) {
 			$using_paths = wp_cache_get( 'networks_have_paths', 'site-options' );
 			if ( false === $using_paths ) {
-				$using_paths = (int) $wpdb->get_var( "SELECT id FROM {$wpdb->site} WHERE path <> '/' LIMIT 1" );
+				$using_paths = get_networks( array(
+					'number'       => 1,
+					'count'        => true,
+					'path__not_in' => '/',
+				) );
 				wp_cache_add( 'networks_have_paths', $using_paths, 'site-options'  );
 			}
 		}
@@ -230,7 +293,7 @@ class WP_Network {
 			$path_segments = array_filter( explode( '/', trim( $path, '/' ) ) );
 
 			/**
-			 * Filter the number of path segments to consider when searching for a site.
+			 * Filters the number of path segments to consider when searching for a site.
 			 *
 			 * @since 3.9.0
 			 *
@@ -278,34 +341,30 @@ class WP_Network {
 			return $pre;
 		}
 
-		// @todo Consider additional optimization routes, perhaps as an opt-in for plugins.
-		// We already have paths covered. What about how far domains should be drilled down (including www)?
-
-		$search_domains = "'" . implode( "', '", $wpdb->_escape( $domains ) ) . "'";
-
 		if ( ! $using_paths ) {
-			$network = $wpdb->get_row( "
-				SELECT * FROM {$wpdb->site}
-				WHERE domain IN ({$search_domains})
-				ORDER BY CHAR_LENGTH(domain)
-				DESC LIMIT 1
-			" );
+			$networks = get_networks( array(
+				'number'     => 1,
+				'orderby'    => array(
+					'domain_length' => 'DESC',
+				),
+				'domain__in' => $domains,
+			) );
 
-			if ( ! empty( $network ) && ! is_wp_error( $network ) ) {
-				return new WP_Network( $network );
+			if ( ! empty( $networks ) ) {
+				return array_shift( $networks );
 			}
 
 			return false;
-
-		} else {
-			$search_paths = "'" . implode( "', '", $wpdb->_escape( $paths ) ) . "'";
-			$networks = $wpdb->get_results( "
-				SELECT * FROM {$wpdb->site}
-				WHERE domain IN ({$search_domains})
-				AND path IN ({$search_paths})
-				ORDER BY CHAR_LENGTH(domain) DESC, CHAR_LENGTH(path) DESC
-			" );
 		}
+
+		$networks = get_networks( array(
+			'orderby'    => array(
+				'domain_length' => 'DESC',
+				'path_length'   => 'DESC',
+			),
+			'domain__in' => $domains,
+			'path__in'   => $paths,
+		) );
 
 		/*
 		 * Domains are sorted by length of domain, then by length of path.
@@ -327,7 +386,7 @@ class WP_Network {
 		}
 
 		if ( true === $found ) {
-			return new WP_Network( $network );
+			return $network;
 		}
 
 		return false;

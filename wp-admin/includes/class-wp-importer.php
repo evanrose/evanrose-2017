@@ -136,13 +136,15 @@ class WP_Importer {
 				fwrite( STDERR, "Error: can not determine blog_id from $blog_id\n" );
 				exit();
 			}
-			if ( empty( $parsed['path'] ) )
+			if ( empty( $parsed['path'] ) ) {
 				$parsed['path'] = '/';
-			$blog = get_blog_details( array( 'domain' => $parsed['host'], 'path' => $parsed['path'] ) );
-			if ( !$blog ) {
+			}
+			$blogs = get_sites( array( 'domain' => $parsed['host'], 'number' => 1, 'path' => $parsed['path'] ) );
+			if ( ! $blogs ) {
 				fwrite( STDERR, "Error: Could not find blog\n" );
 				exit();
 			}
+			$blog = array_shift( $blogs );
 			$blog_id = (int) $blog->blog_id;
 		}
 
@@ -246,9 +248,11 @@ class WP_Importer {
 	}
 
 	/**
-	 * Reset global variables that grow out of control during imports
+	 * Resets global variables that grow out of control during imports.
 	 *
-	 * @global wpdb  $wpdb
+	 * @since 3.0.0
+	 *
+	 * @global wpdb  $wpdb       WordPress database abstraction object.
 	 * @global array $wp_actions
 	 */
 	public function stop_the_insanity() {
