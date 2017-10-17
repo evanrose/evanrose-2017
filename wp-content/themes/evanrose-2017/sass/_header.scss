@@ -2,7 +2,7 @@ header {
 	
 	background-color: #fff;
 	height: 0;
-	position: relative;
+	position: fixed;
 	top: 0;
 	z-index: 1;
 	
@@ -43,7 +43,7 @@ header {
 				font-size: 1.5em;
 				opacity: 0.66;
 				padding: 15px;
-				padding-right: 30px;
+				//padding-right: 30px;
 				text-decoration: none;
 
 				&:hover {

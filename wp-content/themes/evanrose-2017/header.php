@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<header style="position: fixed;">
+<header>
 	<nav>
 		<div class="h1-container">
 			<h1><a href=""><?php bloginfo( 'name') ?></a></h1>
