@@ -8,13 +8,11 @@
 <link href="//fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
-<body>
-
+<body <?php body_class(); ?>>
 <header>
 	<nav>
 		<div class="h1-container">
-			<h1><a href=""><?php bloginfo( 'name') ?></a></h1>
-			
+			<h1><a href="/"><?php bloginfo( 'name') ?></a></h1>
 			<?php echo er_nav_menu(); ?>
 		</div>
 	</nav>

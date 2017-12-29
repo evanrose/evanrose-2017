@@ -33,7 +33,23 @@ function er_nav_menu() {
 		'menu' 			=> 'Navigation', 
 		'menu_class' 		=> '',
 		'container_class' 	=> 'links',
-    	);
+    );
 	
 	return $nav_menu = wp_nav_menu( $args );
 }
+
+/**
+@ Post title to body class
+*/
+
+function er_body_classes( $classes ) {
+
+	global $post;
+	if ( isset( $post ) ) {
+		
+		$classes[] = $post->post_type . '-' . $post->post_name;
+	}
+	
+	return $classes;
+}
+add_filter( 'body_class', 'er_body_classes' );
