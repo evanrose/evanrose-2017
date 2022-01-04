@@ -2,7 +2,7 @@
 <rss version="2.0">
 <channel>
 <title>evanrose.com</title>
-<link>http://evanrose.com</link>
+<link>https://evanrose.com</link>
 <description>evanrose.com syndicated</description>
 <language>en-us</language>
 <lastBuildDate>Mon, 04 Nov 2013 14:20:32 -0800</lastBuildDate>
@@ -10,15 +10,15 @@
 <title>Giving the Site a Haircut</title>
 <description>Recently I refactored almost all of the code that powers the backend of this site, a lot of which has been around for however long it's been since I built the content management system that powers it (and perhaps before - I had another blog that I ran on my Mac out of my apartment when I lived in Oakland whose code made its way into this site). Tired of being the cobbler whose kids have no shoes.&lt;/p&gt;
 
-&lt;p&gt;First, permalinks. They have always been something like evanrose.com/?entry=100 which I thought was cool back in the day (hey, I know PHP!) but long past their sell by date. I built a system that turns the blog post's title into a slug and am using those for permalinks (and being a good web citizen, should someone come into the site via a link to a post with an entry id, they will get seamlessly redirected). Secondly, I changed an .htaccess redirect that would, for example, redirect evanrose.com/work to evanrose.com/?section=work. This has been changed so that all requests end up on index.php and the non-query-stringed URL is split and used. Even the HTML templates I used before I entered blog posts in to a database work with this new scheme (for the most part, at least they're used in the virtual blog directory) for instance, my first month of blogging on evanrose.com (and not on my previous sites) in &lt;a href=&quot;http://evanrose.com/blog/?date=0107&quot;&gt;July of 2001&lt;/a&gt;  and without touching that templated file, it validates as HTML 5!&lt;/p&gt;
+&lt;p&gt;First, permalinks. They have always been something like evanrose.com/?entry=100 which I thought was cool back in the day (hey, I know PHP!) but long past their sell by date. I built a system that turns the blog post's title into a slug and am using those for permalinks (and being a good web citizen, should someone come into the site via a link to a post with an entry id, they will get seamlessly redirected). Secondly, I changed an .htaccess redirect that would, for example, redirect evanrose.com/work to evanrose.com/?section=work. This has been changed so that all requests end up on index.php and the non-query-stringed URL is split and used. Even the HTML templates I used before I entered blog posts in to a database work with this new scheme (for the most part, at least they're used in the virtual blog directory) for instance, my first month of blogging on evanrose.com (and not on my previous sites) in &lt;a href=&quot;https://evanrose.com/blog/?date=0107&quot;&gt;July of 2001&lt;/a&gt;  and without touching that templated file, it validates as HTML 5!&lt;/p&gt;
 
 &lt;p&gt;Finally, back in the day, I didn't know about how to deal with dates and math and whatnot coming from a database so my noob self saved date oriented data like so: insert &quot;Tuesday&quot; into `day name`, etc., which is just NASTY. I was young and I needed the money. Fixed all that garbage (and should have years ago). I also fixed a bunch of hacky crap to deal with page titles and whatnot which was also trivial. It was pleasant work cleaning this business up and by god it might last me another ten years.&lt;/p&gt;
 
 &lt;p&gt;Please don't make me be blogging in ten years. </description>
-<link>http://evanrose.com/?entry=612</link>
-<comments>http://evanrose.com/?entry=612#comments</comments>
+<link>https://evanrose.com/?entry=612</link>
+<comments>https://evanrose.com/?entry=612#comments</comments>
 <pubDate>Mon, 04 Nov 2013 14:20:32 -0800</pubDate>
-<guid isPermaLink="true">http://evanrose.com/?entry=612</guid>
+<guid isPermaLink="true">https://evanrose.com/?entry=612</guid>
 <category>Misc</category>
 </item>
 <item>
@@ -32,19 +32,19 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Just hell of links.</description>
-<link>http://evanrose.com/?entry=611</link>
-<comments>http://evanrose.com/?entry=611#comments</comments>
+<link>https://evanrose.com/?entry=611</link>
+<comments>https://evanrose.com/?entry=611#comments</comments>
 <pubDate>Wed, 14 Aug 2013 14:00:15 -0700</pubDate>
-<guid isPermaLink="true">http://evanrose.com/?entry=611</guid>
+<guid isPermaLink="true">https://evanrose.com/?entry=611</guid>
 <category>Misc</category>
 </item>
 <item>
 <title>Sailing in the Keys</title>
 <description>&lt;a href=&quot;http://www.flickr.com/photos/evanrose/sets/72157634795520567/&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3670/9370711444_ebab91f76f_t.jpg&quot; alt=&quot;Evan Rose Flickr&quot;/&gt;&lt;/a&gt;Last month, I spent a week on a sailboat, bopping around from Florida Key to Florid Key and bopping around in Key West.  I had no idea how much fun this would be, though a week was probably a couple of days too long.  &lt;a href=&quot;http://www.flickr.com/photos/evanrose/sets/72157634795520567/&quot; title=&quot;Evan Rose Flickr&quot;&gt;I took a bunch of photos&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/user/evanrose&quot; title=&quot;Evan Rose Youtube&quot;&gt;shot some really cool video&lt;/a&gt;.  Check 'em out.  </description>
-<link>http://evanrose.com/?entry=610</link>
-<comments>http://evanrose.com/?entry=610#comments</comments>
+<link>https://evanrose.com/?entry=610</link>
+<comments>https://evanrose.com/?entry=610#comments</comments>
 <pubDate>Fri, 26 Jul 2013 06:50:58 -0700</pubDate>
-<guid isPermaLink="true">http://evanrose.com/?entry=610</guid>
+<guid isPermaLink="true">https://evanrose.com/?entry=610</guid>
 <category>Misc</category>
 </item>
 <item>
@@ -79,10 +79,10 @@ And please help Erica to be happy, healthy, and prosperous.
 &lt;li&gt;This project will be harder than you think it will be, but it can be done.  Don't get cocky, but don't get mad.  Do the work.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Finally, read this every single day.</description>
-<link>http://evanrose.com/?entry=609</link>
-<comments>http://evanrose.com/?entry=609#comments</comments>
+<link>https://evanrose.com/?entry=609</link>
+<comments>https://evanrose.com/?entry=609#comments</comments>
 <pubDate>Thu, 21 Mar 2013 04:48:16 -0700</pubDate>
-<guid isPermaLink="true">http://evanrose.com/?entry=609</guid>
+<guid isPermaLink="true">https://evanrose.com/?entry=609</guid>
 <category>Misc</category>
 </item>
 <item>
@@ -100,10 +100,10 @@ And please help Erica to be happy, healthy, and prosperous.
 &lt;/ul&gt;
 
 &lt;p&gt;Yes, &quot;&lt;a href=&quot;http://www.flickr.com/photos/evanrose/8148535908/in/set-72157631911728805&quot;&gt;corny dog&lt;/a&gt;.&quot;  In addition, there was lots of driving, lots of meals with my mom, a &lt;a href=&quot;http://www.dallasarboretum.org/chihuly/&quot;&gt;Dale Chihuly show at the Dallas Arboretum&lt;/a&gt;, lots of catching up with old and making new friends and hell of fun in general.  Though it was fun, I got stuck there while Sandy descended upon New York and couldn't wait to get home, which is exactly why I'm going back to Texas again tomorrow.  See you Texas peops soon.  </description>
-<link>http://evanrose.com/?entry=608</link>
-<comments>http://evanrose.com/?entry=608#comments</comments>
+<link>https://evanrose.com/?entry=608</link>
+<comments>https://evanrose.com/?entry=608#comments</comments>
 <pubDate>Wed, 14 Nov 2012 14:03:53 -0800</pubDate>
-<guid isPermaLink="true">http://evanrose.com/?entry=608</guid>
+<guid isPermaLink="true">https://evanrose.com/?entry=608</guid>
 <category>Misc</category>
 </item>
 <item>
@@ -113,10 +113,10 @@ And please help Erica to be happy, healthy, and prosperous.
 &lt;p&gt;Also, my first project for &lt;a href=&quot;http://people.com&quot;&gt;people.com&lt;/a&gt; is now live: &lt;a href=&quot;http://www.people.com/people/static/h/readerreact/&quot;&gt;Reader React&lt;/a&gt;.  I built this almost from scratch, using only the container and a forked copy of their javascript commenting system.  First, PHP fetches a JSON feed of all of the articles that have had the highest comment counts for the past 24 hours.  Next, each article gets a container and its data is put into it (though in the case of data from People's Wordpress blog, another JSON feed is fetched, parsed and inserted).  Following that, each article id is put into an array which builds an url which is fetched by JQuery and parsed so that each article gets its comment counts as well as the commenting module for that article itself (which required the fork of their commenting system - this need was not foreseen).  Finally, valid XHTML and CSS style the results, which have get written to disk as HTML by a cron job that runs every ten minutes.  Fun project.  Keep 'em coming.&lt;/p&gt;
 
 &lt;p&gt;Finally, &lt;a href=&quot;http://instagram.com/evanallenrose&quot; title=&quot;Evan Rose Instagram&quot;&gt;Instagram added profiles and here is mine&lt;/a&gt;.</description>
-<link>http://evanrose.com/?entry=607</link>
-<comments>http://evanrose.com/?entry=607#comments</comments>
+<link>https://evanrose.com/?entry=607</link>
+<comments>https://evanrose.com/?entry=607#comments</comments>
 <pubDate>Mon, 12 Nov 2012 13:58:02 -0800</pubDate>
-<guid isPermaLink="true">http://evanrose.com/?entry=607</guid>
+<guid isPermaLink="true">https://evanrose.com/?entry=607</guid>
 <category>Misc</category>
 </item>
 <item>
@@ -128,22 +128,22 @@ And please help Erica to be happy, healthy, and prosperous.
 &lt;p&gt;&quot;My mom wrote me an email talking about what she wanted to have happen if she suffered from dementia [she said she wanted me to take her to a place in Oregon where they euthanize people] and I got so sad I went into our freight elevator area and cried.  Sobbed.  Later in the day, left work... and went and saw Portishead, who were great.  But right before the show, I looked at my phone and saw immediately on Twitter that &lt;a href=&quot;http://www.flickr.com/photos/evanrose/8056647043/&quot;&gt;Steve Jobs had died&lt;/a&gt; and I cried again.&quot;&lt;/p&gt;
 
 &lt;p&gt;I am so pleased for my friends. They are wonderful people, they are wonderful together, and we should all be so lucky.  Today is a far happier day.</description>
-<link>http://evanrose.com/?entry=606</link>
-<comments>http://evanrose.com/?entry=606#comments</comments>
+<link>https://evanrose.com/?entry=606</link>
+<comments>https://evanrose.com/?entry=606#comments</comments>
 <pubDate>Fri, 05 Oct 2012 07:20:54 -0700</pubDate>
-<guid isPermaLink="true">http://evanrose.com/?entry=606</guid>
+<guid isPermaLink="true">https://evanrose.com/?entry=606</guid>
 <category>Misc</category>
 </item>
 <item>
 <title>Big Changes Around Here</title>
 <description>Now that I've gotten back in the swing with a new gig and have gotten in the habit of doing something productive with my life, that being productive has beget more productivity, though that hasn't yet extended to my yoga practice.  It has, however, gotten me into a bunch of new cool web stuff I've not done much with over the past few years, given me some new ideas, and so I finally gave this neglected site some much needed TLC and added some cool stuff.&lt;/p&gt;
-&lt;p&gt;First, the site is a hundred pixels slimmer and have hidden the overflow of &lt;a href=&quot;http://flickr.com/photos/evanrose&quot; title=&quot;Evan Rose Flickr&quot;&gt;my Flickr photo stream&lt;/a&gt; and trimmed down some of the descriptions on the header links.  I also got rid of the contact page (which at one time contained a contact form that I got rid of long ago) and moved the functionality that displayed the ten most recent (though infrequent) blog posts to the &lt;a href=&quot;http://evanrose.com/archive&quot; title=&quot;Evan Rose Archive&quot;&gt;archive page&lt;/a&gt; which now contains the last ten posts by default, the ability to choose posts by month, or if passed a post ID, a permalink page.  Some work under the hood included a bunch of changes to the site's date and time functionality, as when I built this site almost ten years ago, I didn't understand PHP's date and time functionality very well so cleaned up a ton of crappy date/time crap, deleted old deprecated code, and did a lot of general refactoring.&lt;/p&gt;
-&lt;p&gt;The new cool jam here though is &lt;a href=&quot;http://evanrose.com/&quot;&gt;the home page&lt;/a&gt; which has a bunch of new stuff.  I built a script that, when called by a &lt;a href=&quot;http://en.wikipedia.org/wiki/Cron&quot;&gt;cron job&lt;/a&gt; every hour, grabs my most recent 22 &lt;a href=&quot;http://twitter.com/evanrose&quot; title=&quot;Evan Rose Twitter&quot;&gt;Tweets&lt;/a&gt; (why 22 is the limit, I have no idea), my 15 most recent &lt;a href=&quot;http://evanrose.tumblr.com&quot;&gt;Tumblr&lt;/a&gt; image posts (which are 500 pixels wide, hence the site's new slimness), and the last ten evanrose.com blog entries (which are obviously way down at the bottom of the page as there aren't many recent ones), puts them all together, and then saves them in a separate file in reverse chronological order. This file is then included on the home page which, because it's just included and not requesting all this stuff every  time the page loads, the page loads much faster.  I know anyone who comes to this site probably already looks at my stuff elsewhere, but this was a fun project and I feel like this site hasn't gotten as much attention it's deserved.&lt;/p&gt;
+&lt;p&gt;First, the site is a hundred pixels slimmer and have hidden the overflow of &lt;a href=&quot;http://flickr.com/photos/evanrose&quot; title=&quot;Evan Rose Flickr&quot;&gt;my Flickr photo stream&lt;/a&gt; and trimmed down some of the descriptions on the header links.  I also got rid of the contact page (which at one time contained a contact form that I got rid of long ago) and moved the functionality that displayed the ten most recent (though infrequent) blog posts to the &lt;a href=&quot;https://evanrose.com/archive&quot; title=&quot;Evan Rose Archive&quot;&gt;archive page&lt;/a&gt; which now contains the last ten posts by default, the ability to choose posts by month, or if passed a post ID, a permalink page.  Some work under the hood included a bunch of changes to the site's date and time functionality, as when I built this site almost ten years ago, I didn't understand PHP's date and time functionality very well so cleaned up a ton of crappy date/time crap, deleted old deprecated code, and did a lot of general refactoring.&lt;/p&gt;
+&lt;p&gt;The new cool jam here though is &lt;a href=&quot;https://evanrose.com/&quot;&gt;the home page&lt;/a&gt; which has a bunch of new stuff.  I built a script that, when called by a &lt;a href=&quot;http://en.wikipedia.org/wiki/Cron&quot;&gt;cron job&lt;/a&gt; every hour, grabs my most recent 22 &lt;a href=&quot;http://twitter.com/evanrose&quot; title=&quot;Evan Rose Twitter&quot;&gt;Tweets&lt;/a&gt; (why 22 is the limit, I have no idea), my 15 most recent &lt;a href=&quot;https://evanrose.tumblr.com&quot;&gt;Tumblr&lt;/a&gt; image posts (which are 500 pixels wide, hence the site's new slimness), and the last ten evanrose.com blog entries (which are obviously way down at the bottom of the page as there aren't many recent ones), puts them all together, and then saves them in a separate file in reverse chronological order. This file is then included on the home page which, because it's just included and not requesting all this stuff every  time the page loads, the page loads much faster.  I know anyone who comes to this site probably already looks at my stuff elsewhere, but this was a fun project and I feel like this site hasn't gotten as much attention it's deserved.&lt;/p&gt;
 &lt;p&gt;Next up: taking those tweets and Tumblr posts and putting them into my database, downloading the Tumblr photos to keep here for safekeeping, and having that same script update my RSS feed on a daily basis with a digest of the stuff I've put on the internet that day.  If you've made it this far, you are now an honorary nerd.  Welcome to the club.</description>
-<link>http://evanrose.com/?entry=605</link>
-<comments>http://evanrose.com/?entry=605#comments</comments>
+<link>https://evanrose.com/?entry=605</link>
+<comments>https://evanrose.com/?entry=605#comments</comments>
 <pubDate>Mon, 01 Oct 2012 14:16:19 -0700</pubDate>
-<guid isPermaLink="true">http://evanrose.com/?entry=605</guid>
+<guid isPermaLink="true">https://evanrose.com/?entry=605</guid>
 <category>Misc</category>
 </item>
 <item>
@@ -192,21 +192,21 @@ And please help Erica to be happy, healthy, and prosperous.
 &lt;/ul&gt;
 
 &lt;p&gt;Look out Fall, here we come!  I'm looking forward to a shorter list at the end of it.</description>
-<link>http://evanrose.com/?entry=604</link>
-<comments>http://evanrose.com/?entry=604#comments</comments>
+<link>https://evanrose.com/?entry=604</link>
+<comments>https://evanrose.com/?entry=604#comments</comments>
 <pubDate>Tue, 04 Sep 2012 06:07:01 -0700</pubDate>
-<guid isPermaLink="true">http://evanrose.com/?entry=604</guid>
+<guid isPermaLink="true">https://evanrose.com/?entry=604</guid>
 <category>Misc</category>
 </item>
 <item>
 <title>New Things</title>
-<description>A new year (just started on my 36th a fact that makes my mother impossibly young), &lt;a href=&quot;http://evanrose.tumblr.com/post/26641886639/happy-birthday-to-me-rolex-datejust-steel&quot; title=&quot;Evan Rose Tumblr&quot;&gt;a new watch&lt;/a&gt;, a new DJ mix (about which I've been talking forever), and a really amazing yoga and meditation practice.  The second half of 2012 is going very well and I like that.&lt;/p&gt;
+<description>A new year (just started on my 36th a fact that makes my mother impossibly young), &lt;a href=&quot;https://evanrose.tumblr.com/post/26641886639/happy-birthday-to-me-rolex-datejust-steel&quot; title=&quot;Evan Rose Tumblr&quot;&gt;a new watch&lt;/a&gt;, a new DJ mix (about which I've been talking forever), and a really amazing yoga and meditation practice.  The second half of 2012 is going very well and I like that.&lt;/p&gt;
 
-&lt;p&gt;I'm not posting a ton here, but you can keep up with me on &lt;a href=&quot;http://facebook.com/evanrose&quot; title=&quot;Evan Rose Facebook&quot;&gt;Facebook&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/evanrose&quot; title=&quot;Evan Rose Twitter&quot;&gt;Twitter&lt;/a&gt;, &lt;a href=&quot;http://evanrose.tumblr.com&quot; title=&quot;Evan Rose Tumblr&quot;&gt;Tumblr&lt;/a&gt; and &lt;a href=&quot;http://flickr.com/evanrose&quot; title=&quot;Evan Rose Flickr&quot;&gt;Flickr&lt;/a&gt;.  </description>
-<link>http://evanrose.com/?entry=603</link>
-<comments>http://evanrose.com/?entry=603#comments</comments>
+&lt;p&gt;I'm not posting a ton here, but you can keep up with me on &lt;a href=&quot;http://facebook.com/evanrose&quot; title=&quot;Evan Rose Facebook&quot;&gt;Facebook&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/evanrose&quot; title=&quot;Evan Rose Twitter&quot;&gt;Twitter&lt;/a&gt;, &lt;a href=&quot;https://evanrose.tumblr.com&quot; title=&quot;Evan Rose Tumblr&quot;&gt;Tumblr&lt;/a&gt; and &lt;a href=&quot;http://flickr.com/evanrose&quot; title=&quot;Evan Rose Flickr&quot;&gt;Flickr&lt;/a&gt;.  </description>
+<link>https://evanrose.com/?entry=603</link>
+<comments>https://evanrose.com/?entry=603#comments</comments>
 <pubDate>Thu, 19 Jul 2012 05:34:19 -0700</pubDate>
-<guid isPermaLink="true">http://evanrose.com/?entry=603</guid>
+<guid isPermaLink="true">https://evanrose.com/?entry=603</guid>
 <category>Misc</category>
 </item>
 <item>
@@ -220,10 +220,10 @@ Greater rate of fulfillment [a shorter time between wanting the &lt;b&gt;right t
 &lt;p&gt;There were some others though, that I can't remember, things I need to tape up on my mirror at home and read every time I look in it.  I need to keep having the kinds of conversations where ideas like these come up.  They're good for me.&lt;/p&gt;
 
 &lt;p&gt;PS Happy spring, it was great to see all of you in Dallas, even under such sad circumstances, and I've made it home safe and sound.  Lots of love.</description>
-<link>http://evanrose.com/?entry=602</link>
-<comments>http://evanrose.com/?entry=602#comments</comments>
+<link>https://evanrose.com/?entry=602</link>
+<comments>https://evanrose.com/?entry=602#comments</comments>
 <pubDate>Thu, 21 Jun 2012 10:42:31 -0700</pubDate>
-<guid isPermaLink="true">http://evanrose.com/?entry=602</guid>
+<guid isPermaLink="true">https://evanrose.com/?entry=602</guid>
 <category>Misc</category>
 </item>
 <item>
@@ -246,10 +246,10 @@ Went to the Cline's Christmas Eve pary and then had a fantastic Christmas dinner
 Got hell of sick, again&lt;br/&gt;
 Went to Boston&lt;br/&gt;
 Rang in the new year seeing a great burlesque show at &lt;a href=&quot;http://www.dresslernyc.com/&quot;&gt;The Dressler&lt;/a&gt;</description>
-<link>http://evanrose.com/?entry=601</link>
-<comments>http://evanrose.com/?entry=601#comments</comments>
+<link>https://evanrose.com/?entry=601</link>
+<comments>https://evanrose.com/?entry=601#comments</comments>
 <pubDate>Mon, 11 Jun 2012 12:16:14 -0700</pubDate>
-<guid isPermaLink="true">http://evanrose.com/?entry=601</guid>
+<guid isPermaLink="true">https://evanrose.com/?entry=601</guid>
 <category>Misc</category>
 </item>
 <item>
@@ -277,19 +277,19 @@ Went to Bayside (and played the drums), came back, went to a dinner party, watch
 With Erica, and I consider that to be our first date
 Went on a sex binge and started really considering leaving B
 --&gt;</description>
-<link>http://evanrose.com/?entry=600</link>
-<comments>http://evanrose.com/?entry=600#comments</comments>
+<link>https://evanrose.com/?entry=600</link>
+<comments>https://evanrose.com/?entry=600#comments</comments>
 <pubDate>Tue, 22 May 2012 07:23:20 -0700</pubDate>
-<guid isPermaLink="true">http://evanrose.com/?entry=600</guid>
+<guid isPermaLink="true">https://evanrose.com/?entry=600</guid>
 <category>Misc</category>
 </item>
 <item>
 <title>April 2012</title>
 <description>Gave up cheese for the month (which lasted all of five days when I made a loophole for Wing Day [and Mac n' Cheese day]), left Austin, finished Hunger Games, started some trashy Jack Reacher book (Worth Dying For), went to a super fun gallery opening and dance-after-party, saw The Hunger Games at Nighthawk, saw the &lt;a href=&quot;http://bldgblog.blogspot.com/2007/10/without-walls-interview-with-lebbeus.html&quot;&gt;Lebbeus Woods&lt;/a&gt; show and then went to the New York Auto Show, had a fun day in Harlem including going to the &lt;a href=&quot;http://www.dnainfo.com/new-york/20120410/washington-heights-inwood/take-train-for-20-year-jazz-tradition-heights&quot;&gt;Jazz Salon&lt;/a&gt;, saw A Dangerous Method, had a sad dinner at &lt;a href=&quot;http://www.yelp.com/biz/upstate-new-york-2&quot;&gt;Upstate&lt;/a&gt;, went to &lt;a href=&quot;http://http://www.littlefieldnyc.com/event/103639/&quot;&gt;Krautwerk 1-8 Condensed: Kraftwerk Covered&lt;/a&gt; which was awesome, saw jazz at Uniqlo, started watching the &lt;a href=&quot;http://www.pbs.org/wnet/newyork/&quot;&gt;Ric Burns New York documentary&lt;/a&gt;, read Reamde by Neal Stevenson, met a crazy couple and had a bad end to a fun day, got laid off, saw &lt;a href=&quot;http://www.bam.org/view.aspx?pid=3969&quot;&gt;Questlove show&lt;/a&gt; at BAM (with Deerhoof, Jeremy Ellis, Sasha Grey, Reggie Watts, and more), something bad happened, saw Do the Right Thing, Meloncholia, Salo, This Film is Not Yet Rated, and Antichrist, got scraped by a new periodontist, twice, had an extremely unfortunate encounter, something good happened and then had one of the best meals and best service I can recall at &lt;a href=&quot;http://www.yelp.com/biz/rye-brooklyn&quot;&gt;Rye&lt;/a&gt;, Zach and his brother Noah came into town, went to Jeramy's sparkle party (and not only ate some cheese, but had pizza for the second time in way more than six months), saw &lt;a href=&quot;http://www.imdb.com/title/tt1758692/&quot;&gt;Like Crazy&lt;/a&gt; and got very, very sad, went on my first bike ride of the year.  A really up and down and crazy month.  </description>
-<link>http://evanrose.com/?entry=599</link>
-<comments>http://evanrose.com/?entry=599#comments</comments>
+<link>https://evanrose.com/?entry=599</link>
+<comments>https://evanrose.com/?entry=599#comments</comments>
 <pubDate>Tue, 08 May 2012 06:51:07 -0700</pubDate>
-<guid isPermaLink="true">http://evanrose.com/?entry=599</guid>
+<guid isPermaLink="true">https://evanrose.com/?entry=599</guid>
 <category>Misc</category>
 </item>
 <item>
@@ -297,10 +297,10 @@ Went on a sex binge and started really considering leaving B
 <description>Saw Moneyball, finished Breakfast at Tiffany's, went to LA for the day, first class (where I saw Dennis Leary and Paul Dano), and hung with Carolyn and Stephen, finally ate at Animal, ate at Isa, had an unfortunate encounter*, re-started and later finished Time, Sex and Power, finally caught up with How I Met Your Mother, Trevor came into town for the Armory Show (Pulse, Scope, Arts Not Fair, The Armory Show, etc.) and we had hell of fun, lost my passport, started Einstein's Dreams for the umpteenth time, fought with a cabbie, went to a dinner party at Brian's, finished A Christmas Story (after two months), got a new driver license, watched The Trip, saw Squarepusher, got &quot;The new iPad&quot;, Zach came into town, saw The Kid on the Bike, watched three hours of Louis CK, went to the launch of Beer Table's Table Beer at Blue Ribbon, which Daria attended, flew to Dallas in order to get to Kansas City to see Larkin but didn't make it, so flew back, finished Sex, Time and Power, read my friend Kirk's book &lt;a href=&quot;http://www.amazon.com/Noncombatants-Twilight-Storm-Novellas-ebook/dp/B007KH02LI/&quot;&gt;Noncombatants&lt;/a&gt;, went to a Mad Men season premiere at The Paley Center, started To Die For (trash novels for men), went to Dallas (again), started The Hunger Games, met Indigo K., one of the world's cutest babies, saw the homies, ate the fried okra, went to Austin, saw the homies, and that's where the month ran out.
 
 &lt;!-- saw Susan on the back of a bike in williamsburg, being ridden by a dude who was not the dude she was with when I encountered her online a year or so ago --&gt;</description>
-<link>http://evanrose.com/?entry=597</link>
-<comments>http://evanrose.com/?entry=597#comments</comments>
+<link>https://evanrose.com/?entry=597</link>
+<comments>https://evanrose.com/?entry=597#comments</comments>
 <pubDate>Fri, 06 Apr 2012 12:39:31 -0700</pubDate>
-<guid isPermaLink="true">http://evanrose.com/?entry=597</guid>
+<guid isPermaLink="true">https://evanrose.com/?entry=597</guid>
 <category>Misc</category>
 </item>
 </channel>

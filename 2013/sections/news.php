@@ -1,13 +1,16 @@
 <?php
 
-$db = mysql_connect( $db_host, $db_user, $db_password );
-mysql_select_db( $db_name ) or die ( mysql_error() . "\n\n" );
+
+
+//$db = mysql_connect( $db_host, $db_user, $db_password );
+//mysql_select_db( $db_name ) or die ( mysql_error() . "\n\n" );
+$db = new mysqli( $db_host , $db_user, $db_password, $db_name);
 $get = "SELECT * from entries ORDER BY id DESC LIMIT 10;";
-$response = mysql_query($get, $db);
+$response = mysqli_query($db, $get);
 //if (mysql_num_rows($response)) echo "<h2>Today's Drafts: <span class=\"normal\">".date("l, F jS, Y")."</span></h2>\n\n";
 $lastdatetime = '';
-if (mysql_num_rows($response)) 
-while ($one_line_of_data=mysql_fetch_assoc($response)) {
+if (mysqli_num_rows($response)) 
+while ($one_line_of_data=mysqli_fetch_assoc($response)) {
 	extract ( $one_line_of_data );
 	
 	$datetime = date("l, F jS, Y", strtotime( $datetime ));

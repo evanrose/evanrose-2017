@@ -30,14 +30,15 @@ if (isset($_GET["date"])) $date_url = $_GET["date"];
 <option>Select</option>
 <?php
 
-$db = mysql_connect( $db_host, $db_user, $db_password );
-mysql_select_db( $db_name ) or die ( mysql_error() . "\n\n" );
+//$db = mysql_connect( $db_host, $db_user, $db_password );
+$db = mysqli_connect($db_host, $db_user, $db_password, $db_name);
+//mysql_select_db( $db_name ) or die ( mysql_error() . "\n\n" );
 $sql = "SELECT DISTINCT YEAR(datetime) as year, MONTH(datetime) as month from entries ORDER BY year DESC, month DESC";
-$response = mysql_query($sql, $db);
+$response = mysqli_query($db, $sql);
 //if (mysql_num_rows($response)) echo "<h2>Today's Drafts: <span class=\"normal\">".date("l, F jS, Y")."</span></h2>\n\n";
 
-if (mysql_num_rows($response)) 
-while ($one_line_of_data=mysql_fetch_assoc($response)) {
+if (mysqli_num_rows($response)) 
+while ($one_line_of_data=mysqli_fetch_assoc($response)) {
 	extract ( $one_line_of_data );
 	$month_name = date("F", mktime(0, 0, 0, $month, 10));
 	echo '<option value="/blog/?year=' . $year . '&amp;month=' . $month . '">' . $month_name . ' ' . $year . '</option>';
@@ -65,7 +66,7 @@ while ($one_line_of_data=mysql_fetch_assoc($response)) {
 </select></p></form>
 
 <form method="get" action="http://www.google.com/custom"><p><b>Search</b><br />
-<input type="text" class="input" size="10" name="q" /><input class="submit" type="submit" value="search" /><input type="hidden" name="domains" value="evanrose.com" /><input type="hidden" name="cof" value="S:http://evanrose.com;AH:center;AWFID:e114f272ce52fa44;" /><input type="hidden" name="sitesearch" value="evanrose.com" /></p></form>
+<input type="text" class="input" size="10" name="q" /><input class="submit" type="submit" value="search" /><input type="hidden" name="domains" value="evanrose.com" /><input type="hidden" name="cof" value="S:https://evanrose.com;AH:center;AWFID:e114f272ce52fa44;" /><input type="hidden" name="sitesearch" value="evanrose.com" /></p></form>
 
 </div>
 
@@ -91,10 +92,10 @@ while ($one_line_of_data=mysql_fetch_assoc($response)) {
 		$sql = "SELECT * FROM entries ORDER BY id DESC LIMIT 10";
 	}
 		
-$response = mysql_query($sql, $db);
+$response = mysqli_query($db, $sql );
 //if (mysql_num_rows($response)) echo "<h2>Today's Drafts: <span class=\"normal\">".date("l, F jS, Y")."</span></h2>\n\n";
-if (mysql_num_rows($response)) 
-while ($one_line_of_data=mysql_fetch_assoc($response)) {
+if (mysqli_num_rows($response)) 
+while ($one_line_of_data=mysqli_fetch_assoc($response)) {
 	extract ( $one_line_of_data ); 
 
 	$entry_slug = strtolower(str_replace(' ','-',$entry_title));

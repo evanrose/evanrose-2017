@@ -28,7 +28,7 @@
 			
 			<?php } elseif (isset($error) && $error=='true') echo $error_text; ?>
 
-			<p class="right"><a href="/" title="Evan Rose">Home</a> | <a href="about" title="About Evan Rose">About</a> | <a href="blog" title="evanrose.com Blog Archives">Blog Archive</a> | <a href="mailto:evan&#64;evanrose.com" title="Contact Evan Rose">Contact</a> | <a href="rss/index.xml">RSS</a> | <a href="work" title="Evan Rose's Work">Work</a> | <a href="http://facebook.com/evan.rose" title="Evan Rose Facebook">Facebook</a> | <a href="https://plus.google.com/117962925924433136310?rel=author">G+</a> | <a href="http://instagram.com/evanallenrose" title="Evan Rose Instagram">Instagram</a> | <a href="http://www.linkedin.com/pub/evan-rose/0/42/10a" title="Evan Rose Linkedin">Linkedin</a> | <a href="http://evanrose.tumblr.com" title="Evan Rose Tumblr">Tumblr</a> | <a href="http://twitter.com/evanrose" title="Evan Rose Twitter">Twitter</a></p>
+			<p class="right"><a href="/" title="Evan Rose">Home</a> | <a href="about" title="About Evan Rose">About</a> | <a href="blog" title="evanrose.com Blog Archives">Blog Archive</a> | <a href="mailto:evan&#64;evanrose.com" title="Contact Evan Rose">Contact</a> | <a href="rss/index.xml">RSS</a> | <a href="work" title="Evan Rose's Work">Work</a> | <a href="http://facebook.com/evan.rose" title="Evan Rose Facebook">Facebook</a> | <a href="https://plus.google.com/117962925924433136310?rel=author">G+</a> | <a href="http://instagram.com/evanallenrose" title="Evan Rose Instagram">Instagram</a> | <a href="http://www.linkedin.com/pub/evan-rose/0/42/10a" title="Evan Rose Linkedin">Linkedin</a> | <a href="https://evanrose.tumblr.com" title="Evan Rose Tumblr">Tumblr</a> | <a href="http://twitter.com/evanrose" title="Evan Rose Twitter">Twitter</a></p>
 
 		</div>
 	
@@ -66,7 +66,7 @@
 			else echo $error_text;
 		?>
 	
-		<p class="footer">All content &copy; by Evan Rose 1999-<?php echo date("Y"); ?> unless otherwise specified.<br/> Usually valid <a href="http://validator.w3.org/check/referer">HTML 5</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://evanrose.com/">CSS</a> and <a href="http://feedvalidator.org/check?url=http://evanrose.com/rss/index.xml">RSS</a></p>
+		<p class="footer">All content &copy; by Evan Rose 1999-<?php echo date("Y"); ?> unless otherwise specified.<br/> Usually valid <a href="http://validator.w3.org/check/referer">HTML 5</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=https://evanrose.com/">CSS</a> and <a href="http://feedvalidator.org/check?url=https://evanrose.com/rss/index.xml">RSS</a></p>
 
 	</div>
 </body>

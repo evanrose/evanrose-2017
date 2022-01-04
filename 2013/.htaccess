@@ -9,9 +9,9 @@ RewriteRule . index.php
 php_flag register_globals off
 Options +Includes
 AddOutputFilter Includes html htm shtml
-redirect 301 /sections/work/sites/christopherjagers/ http://evanrose.com/sections/work/sites/chrisjagers/
-redirect 301 /sections/work/sites/chrisjaggers/ http://evanrose.com/sections/work/sites/chrisjagers/
-redirect 301 /sections/work/sites/chrisjaggers http://evanrose.com/sections/work/sites/chrisjagers/
+redirect 301 /sections/work/sites/christopherjagers/ https://evanrose.com/sections/work/sites/chrisjagers/
+redirect 301 /sections/work/sites/chrisjaggers/ https://evanrose.com/sections/work/sites/chrisjagers/
+redirect 301 /sections/work/sites/chrisjaggers https://evanrose.com/sections/work/sites/chrisjagers/
 # suppress PHP errors from displaying in the browser
 #php_flag display_startup_errors off
 #php_flag display_errors off

@@ -4,8 +4,10 @@ include( dirname(__FILE__) . '/credentials.inc.php' );
 
 $archive_dir = '/2013';
 
-$db = mysql_connect( $db_host, $db_user, $db_password );
-//$db = new mysqli('127.0.0.1', 'root', '5ba9e20q', 'dbdrowssap1');
+//$db = mysql_connect( $db_host, $db_user, $db_password );
+//$db = mysqli_connect($db_host, $db_user, $db_password, $db_name);
+$db = new mysqli( $db_host , $db_user, $db_password, $db_name);
+//$db = new mysqli($db_host, $db_user, '5ba9e20q', 'dbdrowssap1');
 if ($db->connect_errno > 0) die('Unable to connect to database [' . $db->connect_error . ']');
 //catch old section= urls
 if (isset($_GET["section"])) {
