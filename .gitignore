@@ -3,3 +3,39 @@
 wp-config.php
 credentials.inc.php
 .lando.yml
+
+# Ignore everything in the root
+/*
+
+# Allow the wp-content directory
+!/wp-content/
+
+# Ignore everything inside wp-content
+/wp-content/*
+
+# Allow your specific custom themes, plugins, or mu-plugins
+!/wp-content/themes/
+!/wp-content/plugins/
+!/wp-content/mu-plugins/
+
+# Ignore default themes and plugins that come with WordPress core
+/wp-content/themes/twenty*/
+/wp-content/plugins/hello.php
+
+# Allow your specific custom theme or plugin folder
+!/wp-content/themes/your-custom-theme-name/
+!/wp-content/plugins/your-custom-plugin-name/
+
+# Ignore uploads, upgrades, and system artifacts inside wp-content
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/cache/
+/wp-content/languages/
+/wp-content/wflogs/
+
+!/blog
+!/encephalon
+!/resume
+!/2013
+!/favicon.ico
+!/README.md
