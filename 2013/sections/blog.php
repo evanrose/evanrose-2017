@@ -6,7 +6,6 @@ mysql_select_db( $db_name ) or die ( mysql_error() . "\n\n" );
 $get = "SELECT * from entries ORDER BY id DESC LIMIT 10;";
 $response = mysql_query($get, $db);
 //if (mysql_num_rows($response)) echo "<h2>Today's Drafts: <span class=\"normal\">".date("l, F jS, Y")."</span></h2>\n\n";
-$lastdatetime = '';
 if (mysql_num_rows($response)) 
 while ($one_line_of_data=mysql_fetch_assoc($response)) {
 	extract ( $one_line_of_data );
@@ -14,6 +13,8 @@ while ($one_line_of_data=mysql_fetch_assoc($response)) {
 }
 
 */
+
+$lastdatetime = '';
 
 if (isset($_GET["year"])) $year_url = $_GET["year"];
 if (isset($_GET["month"])) $month_url = $_GET["month"];

@@ -1,0 +1,40 @@
+main {
+    @media (max-width: 750px) {
+        margin: auto 15px 0 15px;
+    }
+
+    .container {
+        margin-top: 4em;
+    }
+
+    .post {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 3em;
+
+        body.single-post & {
+            border-bottom: 0px;
+        }
+        body.error404 & {
+            border-bottom: 0px;
+        }
+
+        h2 {
+            padding-bottom: 1em;
+        }
+
+        ul {
+            margin-left: 15px;
+
+            li {
+                margin-bottom: 1em;
+                text-indent: 0.5em;
+            }
+        }
+
+        p {
+            img {
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
