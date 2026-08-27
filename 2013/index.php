@@ -20,15 +20,15 @@
 
 	<div id="container">
 		<div id="title">
-			<h1><a href="/" title="Evan Rose">Evan Rose</a></h1>
+			<h1><a href="<?php echo $dr; ?>" title="Evan Rose">Evan Rose</a></h1>
 
 			<?php if ($section=='news') { ?>
 
-				<p id="about">...was born in Dallas, Texas, traveled, lived in the Bay Area, DJed, studied architecture, collected furniture, played drums, and is now a web developer and IT consultant in New York City. <a href="/about" title="About Evan Rose">Here's more</a>.</p>
+				<p id="about">...was born in Dallas, Texas, traveled, lived in the Bay Area, DJed, studied architecture, collected furniture, played drums, and is now a web developer and IT consultant in New York City. <a href="<?php echo $dr; ?>/about" title="About Evan Rose">Here's more</a>.</p>
 			
 			<?php } elseif (isset($error) && $error=='true') echo $error_text; ?>
 
-			<p class="right"><a href="/" title="Evan Rose">Home</a> | <a href="about" title="About Evan Rose">About</a> | <a href="blog" title="evanrose.com Blog Archives">Blog Archive</a> | <a href="mailto:evan&#64;evanrose.com" title="Contact Evan Rose">Contact</a> | <a href="rss/index.xml">RSS</a> | <a href="work" title="Evan Rose's Work">Work</a> | <a href="http://facebook.com/evan.rose" title="Evan Rose Facebook">Facebook</a> | <a href="https://plus.google.com/117962925924433136310?rel=author">G+</a> | <a href="http://instagram.com/evanallenrose" title="Evan Rose Instagram">Instagram</a> | <a href="http://www.linkedin.com/pub/evan-rose/0/42/10a" title="Evan Rose Linkedin">Linkedin</a> | <a href="https://evanrose.tumblr.com" title="Evan Rose Tumblr">Tumblr</a> | <a href="http://twitter.com/evanrose" title="Evan Rose Twitter">Twitter</a></p>
+			<p class="right"><a href="<?php echo $dr; ?>" title="Evan Rose">Home</a> | <a href="<?php echo $dr; ?>about" title="About Evan Rose">About</a> | <a href="<?php echo $dr; ?>blog" title="evanrose.com Blog Archives">Blog Archive</a> | <a href="mailto:evan&#64;evanrose.com" title="Contact Evan Rose">Contact</a> | <a href="<?php echo $dr; ?>rss/index.xml">RSS</a> | <a href="<?php echo $dr; ?>work" title="Evan Rose's Work">Work</a> | <a href="http://facebook.com/evan.rose" title="Evan Rose Facebook">Facebook</a> | <a href="https://plus.google.com/117962925924433136310?rel=author">G+</a> | <a href="http://instagram.com/evanallenrose" title="Evan Rose Instagram">Instagram</a> | <a href="http://www.linkedin.com/in/evanarose" title="Evan Rose Linkedin">Linkedin</a> | <a href="https://evanrose.tumblr.com" title="Evan Rose Tumblr">Tumblr</a> | <a href="http://twitter.com/evanrose" title="Evan Rose Twitter">Twitter</a></p>
 
 		</div>
 	
@@ -40,7 +40,7 @@
 				
 				<p>I build dynamic websites, web applications, and content management systems using PHP, MySQL, XHTML, CSS and more, and assist small businesses and individuals with their Apple products and networks. <a href="/work" title="Evan Rose's Work">Here's more</a>.</p>
 				
-				<p class="right"><a href="/work" title="Evan Rose's Work">Clients</a> | <a href="/work#consultation" title="Evan Rose's Work">IT Consultation</a> | <a href="/work#development" title="Evan Rose's Work">Web Development</a> | <a href="/resume" title="Evan Rose's Resum&eacute;">Resum&eacute;</a></p>
+				<p class="right"><a href="<?php echo $dr; ?>work" title="Evan Rose's Work">Clients</a> | <a href="<?php echo $dr; ?>work#consultation" title="Evan Rose's Work">IT Consultation</a> | <a href="<?php echo $dr; ?>work#development" title="Evan Rose's Work">Web Development</a> | <a href="/resume" title="Evan Rose's Resum&eacute;">Resum&eacute;</a></p>
 			
 			</div>
 			

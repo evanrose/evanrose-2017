@@ -1,5 +1,14 @@
 <?php
 
+
+add_action( 'wp', function() {
+	
+	$path = explode ( '/', $_SERVER['REQUEST_URI'] );
+	if( $path[1] == 'blog' ) wp_redirect( '/2013' . $_SERVER['REQUEST_URI'] );
+});
+
+
+
 add_theme_support( 'post-thumbnails' );
 register_nav_menus(); 
 
@@ -9,7 +18,9 @@ register_nav_menus();
 
 function er_enqueue_styles() {
 
-	$version = constant('IS_LOCAL') ? rand(10,100) : date('Y');
+	$local = true;
+
+	$version = $local ? rand(10,100) : date('Y');
 
 	wp_enqueue_style( 'er_styles', get_template_directory_uri() . '/css/styles.css', [], $version  );
 }

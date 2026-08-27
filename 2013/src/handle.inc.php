@@ -59,3 +59,7 @@ $file_name = $_SERVER['DOCUMENT_ROOT'] . '/sections/' . $section . '.php';
 	}
 	*/
 $error_text = '<div><h2>Error</h2><p>The link you clicked through doesn\'t lead anywhere, or another error has occurred. <a href="mailto:evan&#64;evanrose.com">Please let me know what happened</a> so I can fix it, or choose another link to follow.</p></div>';
+
+/* 2026 */
+
+$dr = '/2013/';
