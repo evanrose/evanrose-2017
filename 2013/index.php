@@ -24,15 +24,15 @@
 
 			<?php if ($section=='news') { ?>
 
-				<p id="about">...was born in Dallas, Texas, traveled, lived in the Bay Area, DJed, studied architecture, collected furniture, played drums, and is now a web developer and IT consultant in New York City. <a href="<?php echo $dr; ?>/about" title="About Evan Rose">Here's more</a>.</p>
+				<p id="about">...was born in Dallas, Texas, traveled, lived in the Bay Area, DJed, studied architecture, collected furniture, played drums, and is now a web developer and IT consultant in New York City. <a href="<?php echo $dr; ?>about" title="About Evan Rose">Here's more</a>.</p>
 			
-			<?php } elseif (isset($error) && $error=='true') echo $error_text; ?>
+			<?php } elseif (isset($error) && $error == 1 ) echo $error_text; ?>
 
 			<p class="right"><a href="<?php echo $dr; ?>" title="Evan Rose">Home</a> | <a href="<?php echo $dr; ?>about" title="About Evan Rose">About</a> | <a href="<?php echo $dr; ?>blog" title="evanrose.com Blog Archives">Blog Archive</a> | <a href="mailto:evan&#64;evanrose.com" title="Contact Evan Rose">Contact</a> | <a href="<?php echo $dr; ?>rss/index.xml">RSS</a> | <a href="<?php echo $dr; ?>work" title="Evan Rose's Work">Work</a> | <a href="http://facebook.com/evan.rose" title="Evan Rose Facebook">Facebook</a> | <a href="https://plus.google.com/117962925924433136310?rel=author">G+</a> | <a href="http://instagram.com/evanallenrose" title="Evan Rose Instagram">Instagram</a> | <a href="http://www.linkedin.com/in/evanarose" title="Evan Rose Linkedin">Linkedin</a> | <a href="https://evanrose.tumblr.com" title="Evan Rose Tumblr">Tumblr</a> | <a href="http://twitter.com/evanrose" title="Evan Rose Twitter">Twitter</a></p>
 
 		</div>
 	
-		<?php if ($section=='news') : ?>
+		<?php if ($section=='news') { ?>
 
 			<div id="consults">
 			
@@ -58,13 +58,9 @@
 			
 			</div>
 
-		<?php endif; ?>
+		<?php } ?>
 
-		<?php
-		
-			if ( $section ) include( 'sections/' . $section . '.php' );
-			else echo $error_text;
-		?>
+		<?php include( 'sections/' . $section . '.php' ); ?>
 	
 		<p class="footer">All content &copy; by Evan Rose 1999-<?php echo date("Y"); ?> unless otherwise specified.<br/> Usually valid <a href="http://validator.w3.org/check/referer">HTML 5</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=https://evanrose.com/">CSS</a> and <a href="http://feedvalidator.org/check?url=https://evanrose.com/rss/index.xml">RSS</a></p>
 

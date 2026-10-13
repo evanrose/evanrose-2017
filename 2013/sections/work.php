@@ -10,7 +10,7 @@
 
 <h3>Web Development</h3>
 
-<p>I build web sites and web based applications using PHP, MySQL, and valid XHTML/CSS and have experience with Java and ATG Dynamo.  I specialize in clean and intuitable interfaces, Wordpress, Drupal as well as custom content management systems, and can handle everything from front-end design to server administration.</p>
+<p>I build web sites and web based applications using PHP, MySQL, and valid XHTML/CSS and have experience with Java and ATG Dynamo.  I specialize in clean and intuitable interfaces, WordPress, Drupal as well as custom content management systems, and can handle everything from front-end design to server administration.</p>
 
 <h4>Corporate Consultation</h4>
 
@@ -20,7 +20,7 @@
 
 <a href="http://northpointdigital.com">NorthPoint Digital</a><br/>
 <a href="http://mtv.com">MTV</a><br/>
-MTV's Wordpress based blog platform<br/>
+MTV's WordPress based blog platform<br/>
 <a href="http://vh1.com">VH1</a><br/>
 <a href="http://comedycentral.com">Comedy Central</a><br/>
 <a href="http://mtvu.com">MTVU</a><br/>
@@ -34,9 +34,9 @@ ZoZa<br/>
 
 <h4>Freelance</h4>
 
-<p><strong><a href="http://www.leffot.com">Leffot</a> and <a href="http://blog.leffot.com">Leffot Blog</a>:</strong> site, hosting, custom Wordpress installation and implementation of design</p>
+<p><strong><a href="http://www.leffot.com">Leffot</a> and <a href="http://blog.leffot.com">Leffot Blog</a>:</strong> site, hosting, custom WordPress installation and implementation of design</p>
 <p><strong>Beer Table (<a href="http://www.beertable.com">v1</a> and <a href="http://www.beertable.com">v2</a>):</strong> site, hosting, Content Management System and mailing list system development and implementation of design</p>
-<p><strong><a href="http://btpantry.com.s14910.gridserver.com/">Beer Table Pantry</a></strong>:  site, hosting, custom Wordpress installation and implementation of design</p>
+<p><strong><a href="http://btpantry.com.s14910.gridserver.com/">Beer Table Pantry</a></strong>:  site, hosting, custom WordPress installation and implementation of design</p>
 <p><strong><a href="http://www.slpcollect.com">SLP Collect</a>:</strong> web based art collection administration tool development</p>
 <p><strong><a href="http://nickistager.com.s14910.gridserver.com/">Nicki Stager</a>:</strong> Flickr feed inclusion based on set id (work type) and user editable field for managing resum&eacute; content</p>
 <p><strong><a href="http://www.newartdealers.org">The New Art Dealers' Association</a>:</strong> site, hosting, Content Management System and mailing list system development and design</p> 
